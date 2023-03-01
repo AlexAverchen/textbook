@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<script>
+
+    function getMaxSubSum(arr) {
+        let maxSum = 0;
+        let temporarySum = 0;
+
+        for (let item of arr) {
+            temporarySum += item;
+            maxSum = Math.max(maxSum, temporarySum);
+            if (temporarySum < 0) temporarySum = 0; 
+        }
+        return maxSum;
+    }
+    alert(getMaxSubSum([-3, 2, 27, -1, 3, 6, -3, 0]));
+
+</script>

@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<script>
+
+    function unique(arr) {
+        return arr.filter((item, index, array) => array.indexOf(item) === index);
+    }
+
+    let strings = ["кришна", "кришна", "харе", "харе", "харе", "кришна", "здравствуйте"];
+
+    alert( unique(strings) ); 
+
+</script>

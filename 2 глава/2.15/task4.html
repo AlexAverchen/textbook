@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<script>
+
+    function pow(x, n) {
+        return x ** n;
+    }
+    
+    let x = prompt('Число?', '');
+    let n = prompt('В какую степень возвести?', '');
+
+    if (n < 1) {
+        alert('Введите натуральное число');
+    } else {
+        alert( pow(x, n) );
+    }
+</script>

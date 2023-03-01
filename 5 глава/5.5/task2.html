@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<script>
+
+    function filterRange(arr, a, b) {
+        return arr.filter(item => (a <= item && item <= b))
+    }
+    
+    let arr = [8, 2, 4, 6, 3, 7, 13];
+
+    let filtered = filterRange(arr, 4, 7);
+
+    alert( filtered );
+    
+</script>

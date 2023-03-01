@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<script>
+
+    function groupByld(array) {
+        return array.reduce((obj, value) => {
+            obj[value.id] = value;
+            return obj;
+        }, {})
+    }
+
+</script>

@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<script>
+
+    if (-1 || 0) alert( 'first' ); // выполнится, внутри if значение -1 - True
+
+    if (-1 && 0) alert( 'second' ); // не выполнится, внутри if будет 0 - False
+
+    if (null || -1 && 1) alert( 'third' ); // выполнится, внутри if будет 1 - True
+
+</script>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<script>
+
+    let userName = prompt('Кто там?', '');
+    
+
+    if (userName == 'Админ') {
+
+        let adminPassword = prompt('Пароль?', '');
+
+        if (adminPassword == 'Я Главный') {
+            alert( 'Здравствуйте!');
+        } else if (adminPassword == null || adminPassword == '') {
+            alert( 'Отменено' );
+        } else {
+            alert( 'Неверный пароль' );
+        }
+    } else if (userName == null || userName == '') {
+        alert( 'Отменено' );
+    } else {
+        alert( 'Я вас не знаю' );
+    }
+
+
+</script>
